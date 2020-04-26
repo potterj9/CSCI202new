@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 3 | Forms &amp; Multimedia</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" />
+</head>
+
+<body>
+    <!-- container, container-fluid (makes everything 100%) -->
+    <div class="container">
+        <h3 class="text-center">Form</h3>
+        <!-- form method - post/get - action - php (where) -->
+
+        <form method="POST" action="account.php" id="form" class="form">
+
+            <div class="form-row">
+                <div class="col">
+                    <input type="text" class="form-control" name="fname" id="fname" placeholder="Enter Your First Name" size="50" required />
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" name="lname" id="lname" placeholder="Enter Your Last Name" size="50" required/>
+                </div>
+            </div>
+            
+            <input type="submit" class="btn-success" value="Submit" />
+            <br /><br/>
+
+            
+            <div class="form-row">
+                <div class="col">
+                <input type="email" class="form-control"
+                name="email" id="email" placeholder="Enter Your e-mail" size="50" />
+                </div>
+
+                <div class="col">
+                <input type="password" class="form-control" name="password" id="password" placeholder="Enter your password" size="50" >
+                </div>
+            </div>
+            
+            
+            <div>
+
+            <textarea name="" class="form-control" id="" cols="52" rows="10"></textarea>
+        </div>
+            <br>
+            <input type="submit" class="btn btn-secondary" value="Submit" />
+            <!-- contextual colors - primary, success, info, secondary, muted -->
+        </form>
+        <!-- name always goes to server side. id is to identify our input type -->
+
+
+        <!-- Audio -->
+        <h3>Audio</h3>
+        <audio controls autoplay muted loop> <!--also hide-->
+            <source type="audio/mp3" src="media/audio.mp3">
+               <!-- can do other audio types as well to ensure compatibility with users -->
+        </audio>
+
+        <h3>Video</h3>
+        <video controls width="400" muted poster="images/wester.jpg">
+            <source type="video/mp4" src="media/video.mp4">
+        </video>
+
+    </div>
+</body>
+
+</html>

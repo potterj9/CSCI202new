@@ -1,0 +1,43 @@
+/* declaration - {propertyname:value;} */
+
+/* variables - roots -  */
+
+:root{
+    --main-color: #05a081;
+    --primary-color: #00795f;
+    --font-family:'Nunito';
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,600;1,200;1,900&display=swap');
+
+@import '../css/footer.css';
+
+@import '../css/header.css';
+body{
+    background-color: #ccc;
+    font-family: var(--font-family);
+}
+p{
+    font-family: 'Nunito', sans-serif;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: bold;
+    font-variant: small-caps;
+    line-height: 16px;
+    
+    /* font-shorthand */
+    /* font:font-style, font-variant, font-weight, font-size/line-height font-family */
+    /* font: italic small-caps bold 18px/16px 'Nunito', sans-serif; */
+    font: 18px/16px 'Nunito', sans-serif;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--main-color);
+    
+}
+
+h2{
+    color:blue !important;
+    background-color: var(--primary-color);
+}
